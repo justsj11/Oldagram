@@ -7,7 +7,7 @@ import { posts } from "./data.js"
 /*I feel the code can be formatted better. Writing clean code is one of the most important aspects of becoming a great coder.*/
 /*I feel the parameter's name should be better if we name it as post because as we know forEach is just a better way of iterating over an array of objects rather than  */
 
-let feed = ''
+
 /* We need to use data attributes that we have learnt in the previous module to identify the element which has been clicked in the document. For listening to clicks on the document, we need to add an event listener which will listen for clicks. */
 document.addEventListener('click', function (e) {
     if (e.target.dataset.like) {
@@ -18,10 +18,18 @@ function handleLikeClick(postId) {
     const targetPostObj = posts.filter(function (post) {
         return post.uuid === postId
     })[0]
-
+    console.log(targetPostObj)
+    if(targetPostObj.isLiked){
+        targetPostObj.likes--
+    }
+    else{
+        targetPostObj.likes++
+    }
     targetPostObj.isLiked = !targetPostObj.isLiked
+    render()
 }
 function getposts() {
+    let feed = ''
     posts.forEach(function (post) {
         feed += `
                 <div class="head">
@@ -58,7 +66,7 @@ function getposts() {
     return feed
 }
 function render() {
-    document.getElementById("profiles").innerHTML = getposts()
+    document.getElementById('profiles').innerHTML = getposts()
 }
 render()
 /* this is a redundant piece of code, i.e this piece of code can be removed as it hasnt been used anywhere else*/

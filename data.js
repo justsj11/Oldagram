@@ -1,5 +1,5 @@
 /*It's better to have the data in a seperate file and import it in the document where it is required */
-export let posts = [
+export const posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
