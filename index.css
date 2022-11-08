@@ -1,0 +1,84 @@
+/*Congrats. You just learnt how to clone instagram. My motive is too review your code so that it completly gives the feel of real instagram*/
+
+/*If we increase the screen size we can see the images doesn't expand after a certain width. The best way to prevent this from happening is to put the posts in a container and setting a max-width property.
+p.s: Putting individual components in containers can be a very helpful way of making responsive applications. Although, working on responsiveness is covered on a later module of Scrimba, so you need not worry if you can't understand the units used in the container selector.*/
+
+/*I feel a bit of margin for the entire application will be a great user experience as right now , the posts aren't having any margin.*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+width: 110px;
+ margin-bottom: 6px;
+
+}
+#avatar{
+    width: 70px;
+    margin-right: 7px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-bottom: 6px
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+    margin-bottom: 1em;
+}
+.avatarphoto{
+    width:52px;
+    border-radius: 50%;
+    margin-left:10px;
+    margin-bottom: 6px;
+}
+.information{
+    display:flex;
+    
+}
+.nameloc{
+    margin-left: 10px;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+.name{
+    font-weight:700;
+}
+.location{
+    font-size:.88em;
+    font-weight:500;
+}
+.post{
+    width: 100%;
+    max-width: 800px;
+    background-size:cover;
+}
+.icon{
+    width: 35px;
+    font-size:26px;
+    margin-left: 4px
+}
+.icon:hover{
+    transform: scale(1.1);
+    transition: transform 250;
+}
+.putlike{
+    color:red;
+}
+.likeszone{
+    
+    margin-left:6px;
+    margin-bottom: 5px;
+}
+.likeszone,span{
+    font-size:18px;
+    font-weight: 700;
+    
+}
+.post-text{
+    margin-top: 5px;
+    margin-left: 4px;
+    font-size:17px;
+    margin-bottom: 3px;
+}
