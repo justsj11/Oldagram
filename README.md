@@ -1,13 +1,11 @@
-# co1ac4e328952fd6c92a44604
+### Oldagram(Instagram Clone)
 
-## About Scrimba
+This is an Instagram clone which I built using HTML,CSS and Javascript. 
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+## GOALS
+    1. Create the first post
+    2. Using Semantic HTML
+    3. Add hover effects to the HTML.
+## STRETCH GOALS
+    1. Use Javascript to render out all three posts.
+    2. Increase the likes when double clicking on the post.
